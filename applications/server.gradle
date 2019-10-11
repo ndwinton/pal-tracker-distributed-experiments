@@ -5,6 +5,9 @@ dependencies {
     compile project(":components:rest-support")
 
     compile "org.springframework.boot:spring-boot-starter-web"
+    compile "org.springframework.boot:spring-boot-starter-actuator"
+    compile "org.springframework.boot:spring-boot-starter-aop"
+    compile "io.micrometer:micrometer-registry-prometheus:$micrometerVersion"
 
     compile "com.zaxxer:HikariCP:$hikariVersion"
     compile "mysql:mysql-connector-java:$mysqlVersion"
