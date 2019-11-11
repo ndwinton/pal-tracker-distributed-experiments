@@ -30,8 +30,12 @@ public class ProjectClient {
         return info;
     }
 
-    ProjectInfo getProjectFromCache(long projectId, Throwable throwable) {
+    ProjectInfo getProjectFromCache(long projectId, Throwable throwable) throws Throwable {
         logger.warn("Using cached result for " + projectId + " because: " + throwable.toString());
-        return cache.get(projectId);
+        if (cache.containsKey(projectId)) {
+            return cache.get(projectId);
+        } else {
+            throw throwable;
+        }
     }
 }
