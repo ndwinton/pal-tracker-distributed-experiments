@@ -2,10 +2,10 @@ import io.pivotal.pal.tracker.gradlebuild.DependenciesGraphPlugin
 
 buildscript {
     ext {
-        springBootVersion = "2.0.6.RELEASE"
-        springVersion = "5.0.9.RELEASE"
-        mysqlVersion = "8.0.13"
-        jacksonVersion = "2.9.7"
+        springBootVersion = "2.1.9.RELEASE"
+        springVersion = "5.1.10.RELEASE"
+        mysqlVersion = "8.0.18"
+        jacksonVersion = "2.9.9"
         slf4jVersion = "1.7.25"
         mockitoVersion = "2.23.0"
         assertJVersion = "3.11.1"
@@ -14,6 +14,9 @@ buildscript {
         junitVersion = "4.12"
         okhttpVersion = "3.12.0"
         jsonPathVersion = "2.4.0"
+        springCloudVersion = "Greenwich.SR3"
+        springCloudServicesClientLibrariesVersion = "2.1.4.RELEASE"
+        springCloudCommonsVersion = "2.1.1.RELEASE"
     }
 
     repositories {
