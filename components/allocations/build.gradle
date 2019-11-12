@@ -3,6 +3,9 @@ dependencies {
     compile "org.springframework:spring-jdbc:$springVersion"
     compile "com.netflix.hystrix:hystrix-javanica:1.5.18"
     compile "org.springframework.boot:spring-boot-starter-cache:$springBootVersion"
+    compile "org.springframework.data:spring-data-redis:$springBootVersion"
+    compile "redis.clients:jedis:$jedisVersion"
+    
 
     testCompile project(":components:test-support")
 }
