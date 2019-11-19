@@ -16,7 +16,8 @@ The steps are very similar to those for using Hystrix, namely:
   is a version compatible with the Micrometer core libraries brought in
   by the Actuator starter. This is required only if you want to
   expose data in Prometheus format.
-* Apply a `@CircuitBreaker` annotation.
+* Apply a `@CircuitBreaker` annotation. Note that the timesheets
+  component also shows the use of the `@RateLimiter` annotation.
 * Expose the management endpoints (done here by setting
 `management.endpoints.web.exposure.include=*` in `application.properties`)
 
