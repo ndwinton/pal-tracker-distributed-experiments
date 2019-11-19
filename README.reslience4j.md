@@ -14,7 +14,8 @@ The steps are very similar to those for using Hystrix, namely:
   * `org.springframework.boot:spring-boot-starter-aop`
   * `io.micrometer:micrometer-registry-prometheus` - ensuring that this
   is a version compatible with the Micrometer core libraries brought in
-  by the Actuator starter.
+  by the Actuator starter. This is required only if you want to
+  expose data in Prometheus format.
 * Apply a `@CircuitBreaker` annotation.
 * Expose the management endpoints (done here by setting
 `management.endpoints.web.exposure.include=*` in `application.properties`)
