@@ -1,0 +1,9 @@
+http://localhost:8083/users/1
+http://localhost:8083/accounts?ownerId=1
+http://localhost:8083/projects?accountId=1
+http://localhost:8081/allocations?projectId=1
+http://localhost:8081/allocations POST {"userId": 1, "projectId": 1, "firstDay": "2019-11-11", "lastDay": "2020-11-11"}
+http://localhost:8082/stories?projectId=1
+http://localhost:8084/time-entries?userId=1
+http://localhost:8084/time-entries POST {"userId": 1, "projectId": 1, "date": "2019-01-01", "hours": 8}
+
